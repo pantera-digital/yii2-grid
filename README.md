@@ -1,2 +1,2 @@
 # yii2-grid
-Enhanced GridView with various utilities for Yii Framework 2.0
+Various utilities for ii Framework 2.x GridView
