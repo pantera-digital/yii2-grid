@@ -1,6 +1,6 @@
 {
     "name": "pantera-digital/yii2-grid",
-    "description": "Enhanced GridView with various utilities for Yii Framework 2.0",
+    "description": "Various utilities for Yii Framework 2.x GridView",
     "homepage": "https://github.com/pantera-digital/yii2-grid",
     "type": "yii2-extension",
     "minimum-stability": "dev",
