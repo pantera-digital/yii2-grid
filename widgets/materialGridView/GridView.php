@@ -12,6 +12,14 @@ class GridView extends \kartik\grid\GridView
 
     public $bordered = false;
 
+    public $panelTemplate = '{panelHeading}
+    {panelBefore}
+    <div class="panel {type}">
+        {items}
+        {panelAfter}
+        {panelFooter}
+    </div>';
+
     public function run()
     {
         parent::run();
