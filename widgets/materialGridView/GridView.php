@@ -13,10 +13,10 @@ class GridView extends \kartik\grid\GridView
     public $bordered = false;
 
     public $panelTemplate = '{panelHeading}
+    <div class="pull-left">{panelAfter}</div>
     {panelBefore}
     <div class="panel {type}">
         {items}
-        {panelAfter}
         {panelFooter}
     </div>';
 
@@ -24,5 +24,6 @@ class GridView extends \kartik\grid\GridView
     {
         parent::run();
         Assets::register($this->view);
+        \yii\materialicons\AssetBundle::register($this->view);
     }
 }
