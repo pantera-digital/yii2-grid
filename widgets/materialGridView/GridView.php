@@ -12,13 +12,32 @@ class GridView extends \kartik\grid\GridView
 
     public $bordered = false;
 
-    public $panelTemplate = '{panelHeading}
-    <div class="pull-left">{panelAfter}</div>
-    {panelBefore}
+    public $panelHeadingTemplate = '<h3 class="panel-title">{heading}</h3>';
+
+    public $panelBeforeTemplate = '<div class="pull-right">
+    <div class="btn-toolbar kv-grid-toolbar" role="toolbar">
+        {toolbar}
+    </div>
+</div>
+<div class="pull-right">{summary}</div>
+{before}
+<div class="clearfix"></div>';
+
+    public $panelTemplate = '
+    <div>
+    <div class="pull-left">{panelHeading}</div>
+    <div class="pull-right">{panelBefore}</div>
+    <div class="clearfix"></div>
+    </div>
     <div class="panel {type}">
         {items}
+        {panelAfter}
         {panelFooter}
     </div>';
+
+    public $panelFooterTemplate = '<div class="kv-panel-pager pull-right">{pager}</div>
+<div class="bulk-button">{footer}</div>
+<div class="clearfix"></div>';
 
     public function run()
     {
